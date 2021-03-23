@@ -11,3 +11,11 @@
 
 echo Hello World
 echo Welcome to DevOps Training
+
+# To print multi line outputs we need to enable escape sequences \n
+# Syntax: echo -e "Hello\nWorld"
+# when we use -e option then give input in quotes, Preferably double quotes
+
+echo -e "Hello\nWorld"
+echo -e "Hello\n\nWorld"
+
