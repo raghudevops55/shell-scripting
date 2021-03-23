@@ -16,6 +16,8 @@ BASH is default
 SH - Bourne Shell 
 BASH - Bourne / Born Again Shell
 
+SH & BASH are same in linux 
+
 Shell is a interpreter, but not a compile.
 
 1. She-Bang & Comments 
