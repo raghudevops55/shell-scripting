@@ -2,7 +2,7 @@
 
 1. She-Bang & Comments 
 2. Variables 
-3. Inputs 
+3. Inputs  ( Read & Special Variables)
 4. Functions 
 5. Misc ( Exit Status & Redirectors & Quotes)
 6. Conditions
