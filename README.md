@@ -20,12 +20,13 @@ SH & BASH are same in linux
 
 Shell is a interpreter, but not a compile.
 
-1. She-Bang & Comments 
-2. Variables 
-3. Inputs  ( Read & Special Variables)
-4. Functions 
-5. Misc ( Exit Status & Redirectors & Quotes)
-6. Conditions
-7. Loops
+1. She-Bang & Comments
+2. Print
+3. Variables 
+4. Inputs  ( Read & Special Variables)
+5. Functions 
+6. Misc ( Exit Status & Redirectors & Quotes)
+7. Conditions
+8. Loops
 
 ## Project Setup using Scripting.
