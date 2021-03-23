@@ -14,11 +14,17 @@ echo Welcome to ${COURSE} training
 echo Training of $COURSE lasts for 70 days
 echo "$COURSE training covers shell scripting & Ansible"
 
-
 ## Variables usually holds a data which varies from time to time.
 
-## Accessing varibale can be done with $var and also ${var}
+## Accessing variable can be done with $var and also ${var}
 
 a=100
 fruit=Apple
+echo $fruit is $ano
 echo $fruit is ${a}no
+
+
+## Variable Names.
+
+# Dynamic Variables
+
