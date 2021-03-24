@@ -19,7 +19,7 @@ echo "$COURSE training covers shell scripting & Ansible"
 ## Accessing variable can be done with $var and also ${var}
 
 a=100
-fruit=Apple
+fruit=Banana
 echo $fruit is $ano
 echo $fruit is ${a}no
 
@@ -27,4 +27,19 @@ echo $fruit is ${a}no
 ## Variable Names.
 
 # Dynamic Variables
+
+echo Good Morning , Today date is 2021-03-24
+
+# Dynamic variables can be created in two ways
+# 1 . Command Substitution, Declaring a varibale from command output  , Syntax: var=$(commands)
+# 2 . Arithmetic Substitution, Declaring va variable from arthmetic expression, Syntax: var=$((expressions))
+
+DATE=$(date +%F)
+echo Good Morning , Today date is ${DATE}
+
+ADD=$((2+3))
+
+echo Added value of 2+3 = ${ADD}
+
+
 
