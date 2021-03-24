@@ -42,6 +42,6 @@ ADD=$((2+3))
 echo Added value of 2+3 = ${ADD}
 
 echo "Env Variable UID = ${UID}"
-echo "ENV variable COURSE = ${COURSE}"
+echo "ENV variable COURSENAME = ${COURSENAME}"
 
 
