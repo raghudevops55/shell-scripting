@@ -10,4 +10,6 @@
 
 # In shell scripting this status number we can use to tell that the script execution is a failure by using exit command.
 
-exit ## returns 0 which means success
+#exit  ## returns 0 which means success
+
+exit 1
