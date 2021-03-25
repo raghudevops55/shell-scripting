@@ -12,3 +12,5 @@ xyz() {
 ## Call the function
 abc
 xyz
+
+xyz
