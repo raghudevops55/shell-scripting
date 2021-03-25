@@ -9,3 +9,6 @@ xyz() {
   echo "Welcome to xyz function"
 }
 
+## Call the function
+abc
+xyz
