@@ -5,6 +5,7 @@ yum install nginx -y
 STAT $? "Nginx Installation"
 
 
+exit
 
 echo "------------------------------------------------------------------------------------------------------------"
 echo -e "\e[1;35m [INFO] Download Frontend Component\e[0m"
