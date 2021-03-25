@@ -7,3 +7,5 @@ catalogue:	## Install Catalogue Component for RoboShop Project
 cart:		## Install Cart Component for RoboShop Project
 	@sh components/cart.sh
 
+frontend:		## Install Frontend Web Component for RoboShop Project
+	@sh components/frontend.sh
