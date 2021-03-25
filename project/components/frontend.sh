@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source common.sh
+source components/common.sh
 
 PRINT "Installing Nginx"
 yum install nginx -y
