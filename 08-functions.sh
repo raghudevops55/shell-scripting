@@ -14,3 +14,11 @@ abc
 xyz
 
 xyz
+
+print_value() {
+  echo "Input Value is $1"
+}
+
+print_value 10
+print_value 20
+print_value 30
