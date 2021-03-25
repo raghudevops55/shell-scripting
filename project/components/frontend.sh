@@ -1,9 +1,11 @@
 #!/bin/bash
 
-yum install nginx -y
-cp
-systemctl enable nginx
-systemctl start nginx
+yum install nginxccccc -y
+if [ $? -ne 0 ]; then
+  echo "Nginx Installation is failure"
+  exit 2
+fi
+
 
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 cd /usr/share/nginx/html
@@ -14,4 +16,5 @@ mv static/* .
 rm -rf frontend-master README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 
+systemctl enable nginx
 systemctl restart nginx
