@@ -26,7 +26,7 @@ Shell is a interpreter, but not a compile.
 4. Inputs  ( Read & Special Variables)
 5. Functions 
 6. Misc ( Exit Status & Redirectors & Quotes)
-7. Conditions
+7. Conditions ( if & case )
 8. Loops
 
 ## Project Setup using Scripting.
