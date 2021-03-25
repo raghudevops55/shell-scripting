@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo -e "\e[1;35m [INFO] Installing Nginx\e[0m"
-yum install nginxccccc -y
+yum install nginx -y
 if [ $? -ne 0 ]; then
   echo -e "\e[1;31m [ERROR] Nginx Installation is failure\e[0m"
   exit 2
 else
-  echo -e "\e[1;32m Nginx Installation is successful"
+  echo -e "\e[1;32m [SUCC] Nginx Installation is successful"
 fi
 
 
