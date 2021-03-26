@@ -14,4 +14,3 @@ case $var in
     ;;
 esac
 
-  

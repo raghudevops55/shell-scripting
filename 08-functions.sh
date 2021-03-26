@@ -22,3 +22,13 @@ print_value() {
 print_value 10
 print_value 20
 print_value 30
+
+##
+# Declare a variable in main program and you can access that in function
+A() {
+  echo value a = $a
+}
+
+a=10
+A
+

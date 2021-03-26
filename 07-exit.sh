@@ -13,3 +13,6 @@
 #exit  ## returns 0 which means success
 
 exit 1
+
+# 1-255 are not not users
+# only 1-125 are for users , 125+ are used by system.
