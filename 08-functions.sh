@@ -54,3 +54,4 @@ C() {
 c=20
 echo Value of C in main program = $c
 C
+echo Value of C in main program = $c
