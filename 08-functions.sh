@@ -55,3 +55,36 @@ c=20
 echo Value of C in main program = $c
 C
 echo Value of C in main program = $c
+
+
+## Variables and names are similar
+# assign a name to value is variable
+# assign a name to commands is function
+
+# Hence the variable properties are applicable for functions as well
+
+# ReadWrite
+D() {
+  echo hai
+}
+
+readonly -f D
+
+# Local
+E() {
+  echo hai
+}
+
+export -f E
+
+# We need to come out of functions with some logics, Exit command cannot be used because it exit the complete script
+# For functions we have return command similar like exit and have same exit states.
+
+F() {
+  echo hai
+  return
+  echo bye
+}
+
+F
+echo Exit Status of Function = $?
