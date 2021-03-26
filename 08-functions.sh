@@ -82,7 +82,7 @@ export -f E
 
 F() {
   echo hai
-  return
+  return 10
   echo bye
 }
 
