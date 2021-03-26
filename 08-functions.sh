@@ -41,3 +41,16 @@ B() {
 B
 echo Value b = $b
 
+# Property of a variable is RW, hence the variables declared in main program can still be overwritten in function and vice-versa
+
+# In some particular cases we need was same variable to be used in main program and function with a different values.
+# for this we use function local variables
+
+C() {
+  local c=10
+  echo Local value c = $c
+}
+
+c=20
+echo Value of C in main program = $c
+C
