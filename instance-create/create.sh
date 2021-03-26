@@ -5,7 +5,7 @@ LID=lt-02efe84819439dc81
 LVER=2
 COMPONENT=$1
 
-if [ -z "${COMPOENT}" ]; then
+if [ -z "${COMPONENT}" ]; then
   echo "Component Name INput is needed"
   exit 1
 fi
