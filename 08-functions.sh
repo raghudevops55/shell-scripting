@@ -32,3 +32,12 @@ A() {
 a=10
 A
 
+# Declare a variable in function and you can access in main program
+
+B() {
+  b=20
+}
+
+B
+echo Value b = $b
+
