@@ -21,7 +21,7 @@ sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 STAT $? "Updating MongoDB configuration file"
 
 PRINT "Start MongoDB Service"
-systemctl enable mongodb
+systemctl enable mongod
 systemctl restart mongod
 STAT $? "Starting MongoDB"
 
