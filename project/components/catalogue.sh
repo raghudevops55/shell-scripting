@@ -1,5 +1,8 @@
 #!/bin/bash
 
+source components/common.sh
+COMPONENT=catalogue
+
 PRINT "Install NodeJS"
 yum install nodejs make gcc-c++ -y
 STAT $? "Installing NodeJS"
