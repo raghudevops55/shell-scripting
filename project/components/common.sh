@@ -6,6 +6,9 @@ if [ "${USER_ID}" -ne 0 ]; then
   exit 1
 fi
 
+set-hostname ${COMPONENT}
+disable-auto-shutdown
+
 PRINT() {
   echo "------------------------------------------------------------------------------------------------------------"
   echo -e "\e[1;35m [INFO] $1 \e[0m"
