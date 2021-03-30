@@ -66,3 +66,10 @@ Install_NodeJS_Dependencies() {
   STAT $? "Downloading dependencies"
 }
 
+NodeJS_Setup() {
+  NodeJS_Install
+  RoboShop_App_User_Add
+  Download_Component_From_GitHub
+  Extract_Component
+  Install_NodeJS_Dependencies
+}
