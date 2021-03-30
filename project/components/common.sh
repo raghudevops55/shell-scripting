@@ -52,4 +52,17 @@ Download_Component_From_GitHub() {
   STAT $? "Downloading ${COMPONENT}"
 }
 
-R
+Extract_Component() {
+  PRINT "Extract ${COMPONENT}"
+  cd /home/roboshop
+  rm -rf ${COMPONENT} && unzip /tmp/${COMPONENT}.zip && mv ${COMPONENT}-main ${COMPONENT}
+  STAT $? "Extracting ${COMPONENT}"
+}
+
+Install_NodeJS_Dependencies() {
+  PRINT "Download NodeJS dependencies"
+  cd /home/roboshop/${COMPONENT}
+  npm install --unsafe-perm
+  STAT $? "Downloading dependencies"
+}
+
