@@ -70,7 +70,7 @@ Install_NodeJS_Dependencies() {
 
 Setup_Service() {
   mv /home/roboshop/${COMPONENT}/systemd.service /etc/systemd/system/${COMPONENT}.service
-  sed -i -e 's/MONGO_DNSNAME/mongodb.devopsb54.tk/' /etc/systemd/system/${COMPONENT}.service
+  sed -i -e 's/MONGO_DNSNAME/mongodb.devopsb55.tk/' /etc/systemd/system/${COMPONENT}.service
   systemctl daemon-reload
   systemctl start catalogue
   systemctl enable catalogue
