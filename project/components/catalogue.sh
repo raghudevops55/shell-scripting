@@ -7,10 +7,6 @@ NodeJS_Install
 RoboShop_App_User_Add
 
 
-PRINT "Download Catalogue Component"
-curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
-STAT $? "Downloading Catalogue"
-
 PRINT "Extract Catalogue"
 cd /home/roboshop
 rm -rf catalogue && unzip /tmp/catalogue.zip && mv catalogue-main catalogue
