@@ -19,4 +19,4 @@ else
 fi
 
 
-
+IPADDRESS=$(aws ec2 describe-instances     --filters Name=tag:Name,Values=cart   | jq .Reservations[].Instances[].PrivateIpAddress | grep -v null |xargs)
