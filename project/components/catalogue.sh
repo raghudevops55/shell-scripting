@@ -3,13 +3,9 @@
 source components/common.sh
 COMPONENT=catalogue
 
-PRINT "Install NodeJS"
-yum install nodejs make gcc-c++ -y
-STAT $? "Installing NodeJS"
+NodeJS_Install
+RoboShop_App_User_Add
 
-PRINT "Create RoboShop Application User"
-useradd roboshop
-STAT $? "Creating Application User"
 
 PRINT "Download Catalogue Component"
 curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"

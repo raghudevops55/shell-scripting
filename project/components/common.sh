@@ -28,3 +28,16 @@ STAT() {
     echo "------------------------------------------------------------------------------------------------------------"
   fi
 }
+
+NodeJS_Install() {
+  PRINT "Install NodeJS"
+  yum install nodejs make gcc-c++ -y
+  STAT $? "Installing NodeJS"
+}
+
+RoboShop_App_User_Add() {
+  PRINT "Create RoboShop Application User"
+  useradd roboshop
+  STAT $? "Creating Application User"
+}
+
