@@ -36,8 +36,15 @@ NodeJS_Install() {
 }
 
 RoboShop_App_User_Add() {
+  id roboshop
+  if [ $? -eq 0 ]; then
+    PRINT "Create RoboShop Application User  - User Already Exists"
+    return
+  fi
   PRINT "Create RoboShop Application User"
   useradd roboshop
   STAT $? "Creating Application User"
 }
+
+
 
