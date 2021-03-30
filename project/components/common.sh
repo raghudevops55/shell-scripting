@@ -66,10 +66,19 @@ Install_NodeJS_Dependencies() {
   STAT $? "Downloading dependencies"
 }
 
+Setup_Service() {
+  mv /home/roboshop/${COMPONENT}/systemd.service /etc/systemd/system/${COMPONENT}.service
+  sed -i -e 's/MONGO_DNSNAME/mongodb.devopsb54.tk/' /etc/systemd/system/${COMPONENT}.service
+  systemctl daemon-reload
+  systemctl start catalogue
+  systemctl enable catalogue
+}
+
 NodeJS_Setup() {
   NodeJS_Install
   RoboShop_App_User_Add
   Download_Component_From_GitHub
   Extract_Component
   Install_NodeJS_Dependencies
+  Setup_Service
 }
