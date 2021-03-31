@@ -27,3 +27,9 @@ mysql:	common ## Install Redis Component for RoboShop Project
 
 shipping:	common ## Install Redis Component for RoboShop Project
 	@sh components/shipping.sh
+
+rabbitmq:	common ## Install Redis Component for RoboShop Project
+	@sh components/rabbitmq.sh
+
+payment:	common ## Install Redis Component for RoboShop Project
+	@sh components/payment.sh
