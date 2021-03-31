@@ -19,11 +19,11 @@ cd /home/roboshop/payment
 pip3 install -r requirements.txt
 STAT $? "Installing Dependencies"
 
-#Update the roboshop user and group id in payment.ini file.
+USER_ID=$(id -u roboshop)
+GROUP_ID=$(id -g roboshop)
 
+PRINT "Update Payment Configuration"
+sed -i -e "/^uid/ c uid = ${USER_ID}" -e "/^gid/ c gid = ${GROUP_ID}"  /home/roboshop/payment/payment.ini
+STAT $? "Updating Payment Configuration"
 
-
-# mv /home/roboshop/payment/systemd.service /etc/systemd/system/payment.service
-# systemctl daemon-reload
-# systemctl enable payment
-# systemctl start payment
+Setup_Service
