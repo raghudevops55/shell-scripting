@@ -13,10 +13,11 @@ PRINT "Install Redis"
 yum install redis -y
 STAT $? "Install Redis"
 
+PRINT "Update Redis Configuration File"
+sed -i -e '/^bind/ c bind 0.0.0.0' /etc/redis.conf
+STAT $? "Updating COnfiguration File of Redis"
 
-#Update the BindIP from 127.0.0.1 to 0.0.0.0 in config file /etc/redis.conf
-#
-#Start Redis Database
-
-# systemctl enable redis
-# systemctl start redis
+PRINT "Start Redis Service"
+systemctl enable redis
+systemctl restart redis
+STAT $? "Starting Redis Service"
