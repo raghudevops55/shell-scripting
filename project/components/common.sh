@@ -86,7 +86,7 @@ Setup_Service() {
           -e 's/CARTENDPOINT/cart.devopsb55.tk/' \
           -e "s/CARTHOST/cart.devopsb55.tk/" \
           -e "s/USERHOST/user.devopsb55.tk/" \
-          -e "s/AMQPHOST/rabbitmq.devopsb55.tk/"
+          -e "s/AMQPHOST/rabbitmq.devopsb55.tk/" \
           /etc/systemd/system/${COMPONENT}.service
   systemctl daemon-reload && systemctl restart ${COMPONENT} && systemctl enable ${COMPONENT}
   STAT $? "Starting ${COMPONENT} Service"
