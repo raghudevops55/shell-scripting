@@ -37,10 +37,10 @@ else
 fi
 
 
+Download_Component_From_GitHub
+Extract_Component_to_tmp
 
-# curl -s -L -o /tmp/mysql.zip "https://github.com/roboshop-devops-project/mysql/archive/main.zip"
-
-# cd /tmp
-# unzip mysql.zip
-# cd mysql-main
-# mysql -u root -ppassword <shipping.sql
+PRINT "Load Shipping Service Schema"
+cd /tmp/mysql-main
+mysql -u root -pRoboShop@123 <shipping.sql
+STAT $? "Loading Schema"
