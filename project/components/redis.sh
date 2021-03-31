@@ -6,7 +6,9 @@ COMPONENT=redis
 OS_Prereqs
 
 PRINT "Setup Redis Repos"
-yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
+if [ ! -f /etc/yum.repos.d/remi.repo ]; then
+  yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
+fi
 STAT $? "Setting Up Redis repos"
 
 PRINT "Install Redis"
