@@ -83,7 +83,7 @@ Setup_Service() {
           -e "s/REDIS_ENDPOINT/redis.devopsb55.tk/" \
           -e "s/CATALOGUE_ENDPOINT/catalogue.devopsb55.tk/"  \
           -e "s/DBHOST/mysql.devopsb55.tk/" \
-          -e 's/CARTENDPOINT/cart.devopsb55.tk' \
+          -e 's/CARTENDPOINT/cart.devopsb55.tk/' \
           /etc/systemd/system/${COMPONENT}.service
   systemctl daemon-reload && systemctl restart ${COMPONENT} && systemctl enable ${COMPONENT}
   STAT $? "Starting ${COMPONENT} Service"
