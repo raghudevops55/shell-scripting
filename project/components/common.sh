@@ -71,7 +71,7 @@ Install_NodeJS_Dependencies() {
 Setup_Service() {
   PRINT "Setup SystemD Service for ${COMPONENT}"
   mv /home/roboshop/${COMPONENT}/systemd.service /etc/systemd/system/${COMPONENT}.service
-  sed -i -e 's/MONGO_DNSNAME/mongodb.devopsb55.tk/' -e "s/MONGO_ENDPOINT/mongodb.devopsb55.tk/" -e "s/REDIS_ENDPOINT/redis.devopsb55.tk/"  /etc/systemd/system/${COMPONENT}.service
+  sed -i -e 's/MONGO_DNSNAME/mongodb.devopsb55.tk/' -e "s/MONGO_ENDPOINT/mongodb.devopsb55.tk/" -e "s/REDIS_ENDPOINT/redis.devopsb55.tk/" -e "s/CATALOGUE_ENDPOINT/catalogue.devopsb55.tk/"  /etc/systemd/system/${COMPONENT}.service
   systemctl daemon-reload && systemctl start ${COMPONENT} && systemctl enable ${COMPONENT}
   STAT $? "Starting ${COMPONENT} Service"
 }
