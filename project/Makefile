@@ -19,3 +19,5 @@ mongodb:	common ## Install MongoDB Component for RoboShop Project
 redis:	common ## Install Redis Component for RoboShop Project
 	@sh components/redis.sh
 
+user:	common ## Install Redis Component for RoboShop Project
+	@sh components/user.sh
