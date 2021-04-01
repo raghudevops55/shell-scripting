@@ -9,11 +9,27 @@
 
 i=10
 while [ $i -gt 0 ]; do
-  echo "Welcome to DevOps"
+  echo "Welcome to DevOps - While Loop"
   i=$(($i-1))
 done
+
+# Above loop will take you inside the loop if your expression is true.
+# In cases we need to go if expression is false then we can use until command
+
+i=10
+until [ $i -lt 0 ]; do
+  echo "Welcome to DevOps - Until Loop"
+  i=$(($i-1))
+done
+
 
 for fruit in apple banana orange berry ; do
   echo   Fruit Name = $fruit
   sleep 1
 done
+
+select fruit in apple banana orange berry ; do
+  echo   Fruit Name = $fruit
+  sleep 1
+done
+
