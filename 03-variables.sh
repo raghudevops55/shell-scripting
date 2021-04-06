@@ -36,6 +36,7 @@ echo Good Morning , Today date is 2021-03-24
 
 DATE=$(date +%F)
 echo Good Morning , Today date is ${DATE}
+echo Good Morning , Today date is $(date +%F)
 
 ADD=$((2+3))
 
