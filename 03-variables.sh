@@ -31,7 +31,7 @@ echo $fruit is ${a}no
 echo Good Morning , Today date is 2021-03-24
 
 # Dynamic variables can be created in two ways
-# 1 . Command Substitution, Declaring a varibale from command output  , Syntax: var=$(commands)
+# 1 . Command Substitution, Declaring a variable from command output  , Syntax: var=$(commands)
 # 2 . Arithmetic Substitution, Declaring va variable from arthmetic expression, Syntax: var=$((expressions))
 
 DATE=$(date +%F)
